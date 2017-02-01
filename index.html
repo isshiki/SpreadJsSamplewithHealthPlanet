@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="spreadjs culture" content="ja-jp">
+    
+    <!-- スプレッドシートに「Excel 2016 カラフル」テーマを指定 -->
+    <link  href="http://localhost/spreadjs/9201610/css/gc.spread.sheets.excel2016colorful.9.20161.0.css" rel="stylesheet">
+        
+    <!-- スプレッドシートの表示領域のサイズを指定 -->
+    <style>
+      html { height:100%; }
+      body { height:98%; }
+      #ss { height:100%; width:1180px; }
+    </style>
+    
+    <!-- SpreadJSの全機能ライブラリをロード -->
+    <script src="http://localhost/spreadjs/9201610/scripts/gc.spread.sheets.all.9.20161.0.min.js"></script>
+    
+    <!-- SpreadJSの日本語リソースをロード -->
+    <script src="http://localhost/spreadjs/9201610/scripts/resources/ja/gc.spread.sheets.resources.ja.9.20161.0.min.js"></script>
+    
+    <!-- 印刷モジュールのインポート -->
+    <script src="http://localhost/spreadjs/9201610/scripts/pluggable/gc.spread.sheets.print.9.20161.0.min.js"></script>
+    
+    <!-- SpreadJSを操作する処理（外部ファイル化した） -->
+    <script src="http://localhost/spreadjsapp.js"></script>
+    
+  </head>
+  <body>
+    
+    <!-- 印刷／CSVファイルダウンロード用のボタン -->
+    　　<input type="button" id="buttonPrint" value="印刷">
+    　　<input type="button" id="buttonCsvFile" value="CSV形式ファイルのダウンロード">
+    
+    <!-- スプレッドシートが表示される場所 -->
+    <div id="ss"></div>
+  </body>
+</html>
