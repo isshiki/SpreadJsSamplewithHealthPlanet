@@ -9,7 +9,7 @@ Build InsiderのSpreadJS記事サンプル。Health Planet APIから取得した
 
 - [Health Planet（ヘルスプラネット）](https://www.healthplanet.jp/)
 - 体重計・体組成計（＝体脂肪率や筋肉量も計れる体重計）の会社である「タニタ」が運営するWebサービス
-- なお、Health Planetには外部からまとめてデータをインポートする手段は用意されていない。そこで簡易的に作成したインポートツール「[isshiki/DataUploderToHealthPlanet](https://github.com/isshiki/DataUploderToHealthPlanet)」も開発した
+- なお、Health Planetには外部からまとめてデータをインポートする手段は用意されていない。そこで簡易的なインポートツール「[isshiki/DataUploderToHealthPlanet](https://github.com/isshiki/DataUploderToHealthPlanet)」も開発した
 
 ## Health Planet APIからのJSONデータ取得
 
@@ -21,9 +21,6 @@ Build InsiderのSpreadJS記事サンプル。Health Planet APIから取得した
   3. アクセス許可コードの取得： https://www.healthplanet.jp/oauth/auth?client_id=＜Client-ID＞&redirect_uri=https://www.healthplanet.jp/oauth/auth&scope=innerscan&response_type=code  
   4. アクセストークンの取得： http://localhost/token.php  
   5. Health Planet APIを使った体組成測定情報の取得： http://localhost/jsondata.php
-
-## 注意
-開発スピード優先でコードは結構適当です。
 
 ## ライセンス
 MIT
