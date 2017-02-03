@@ -1,5 +1,6 @@
 ﻿window.onload = function() {
   
+  // TODO: Health Planet APIが使える場合はjsondata.phpを、使えず仮データで実行する場合はweight.jsonを指定してください。
   fetch("jsondata.php").then(function(response) {
     return response.json();
   }).then(function(json) {
@@ -47,7 +48,7 @@
     var invisible = "white";          // 見えないようにする文字色
     
     // フォーマッターに指定する書式の定義
-    var fmtDate = 'YYYY年MM月dd日(ddd)'; // 日付
+    var fmtDate = 'yyyy年MM月dd日(ddd)'; // 日付
     var fmtKgP2 = '#.00 "kg"';           // キログラム（小数点2桁）
     var fmtPtP1 = '#.0 "%"';             // パーセント（小数点1桁）
     
